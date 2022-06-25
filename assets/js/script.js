@@ -4,11 +4,13 @@ apiKey = '178a897e3808941aa91acb0d5fe8d92b';
 // get elements via document.get by id
 let searchFormEl = document.getElementById('search-form');
 let userInputEl = document.getElementById('user-search');
+let currentDayCityDateIcon = document.getElementById('current-city-date-icon');
+
 
 
 // write function to get uv index from one call api on openweathermaps
 function getOneCallApiUV(lon, lat, dt) {
-    return fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&appid=${apiKey}`)
+    return fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=hourly,minutely&appid=${apiKey}`)
         .then(function (response) {
             return response.json();
         })
@@ -35,6 +37,7 @@ function getWeather(city) {
             let lon = currentWeather.coord.lon;
             let lat = currentWeather.coord.lat;
             let dt = currentWeather.dt;
+
             // test
             // console.log(lon, lat, dt)
             // don't need dt
@@ -59,12 +62,25 @@ searchFormEl.addEventListener('submit', function (event) {
     getWeather(userInput)
         .then(function (weatherData) {
             console.log(weatherData);
-        });
+            let currentWeatherIconCode = weatherData.current.weather[0].icon;
+            // test
+            // console.log(currentWeatherIconCode);
+            
+        // });
+
 
     // return a promise and populate the DOM with data from this
-    // what do i need?
+    // what do i need? current city, date, icon
+        let userInputUpper = userInput.toUpperCase();
+        let currentDate = moment().format('DD-MMM-YYYY');
+        // example icon
+        // let currentWeatherIconCode = currentWeather.current.weather[0].icon
+        // console.log(currentWeatherIconCode)
 
 
+    currentDayCityDateIcon.innerHTML = `${userInputUpper} ${currentDate} <img src="http://openweathermap.org/img/wn/${currentWeatherIconCode}@2x.png">`;
+// moved this to change scope
+});
     // store the city searched for in local storage and
     // append that to the search bar column
 });
