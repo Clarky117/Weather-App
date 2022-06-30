@@ -8,7 +8,6 @@
     <title>Clarky's Weather App</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
@@ -34,14 +33,9 @@
               <button type="submit" class="btn btn-primary d-block w-100">Search</button>
             </form>
 
-            <section class="search-history">
-                
-            </section>
+            <section class="search-history"></section>
 
         </aside>
-
-
-
 
         <!-- results column, 67-75%?; first row, today's weather -->
         <!-- city name, date, icon -->
@@ -50,9 +44,9 @@
         <!-- makes this row/main larger as per above -->
         <section class="col-8">
             <!-- i want a card -->
-            <section class="bg-light card">
+            <section class="bg-light card mb-3">
                 <section class="card-body">
-                    <h4 id="current-city-date-icon" class="card-title">City Name 12/12/2012</h4>
+                    <h4 id="current-city-date-icon" class="card-title">Choose Your City</h4>
                     <p class="card-text">Temp: <span id="current-temp">0</span></p>
                     <p class="card-text">Wind: <span id="current-wind">0</span></p>
                     <p class="card-text">Humidity: <span id="current-humidity">0</span></p>
@@ -63,7 +57,7 @@
             </section>
 
             <!-- 5 day forecast -->
-            <h2>5-Day Forecast</h2>
+            <h2 class="mb-4">5-Day Forecast</h2>
 
             <!-- for styling purposes -->
             <!-- second row, 5 columns for 5 day forecast -->
@@ -71,25 +65,62 @@
 
             <section class="row" id="five-day-cards">
 
-                <!-- <section class="card bg-light m-2">
+                <section class="card bg-light mx-2">
                     <section class="card-body">
-                        <h4 id="one-date" class="card-title">13/12/2012</h4>
+                        <h4 id="one-date" class="card-title">Daily[0]</h4>
                         <img src="#" alt="#">
                         <p id="one-temp" class="card-text">Temp:</p>
                         <p id="one-wind" class="card-text">Wind:</p>
                         <p id="one-humidity" class="card-text">Humidity:</p>
                     </section>
-                </section> -->
+                </section>
+
+                <section class="card bg-light mx-2">
+                    <section class="card-body">
+                        <h4 id="one-date" class="card-title">Daily[1]</h4>
+                        <img src="#" alt="#">
+                        <p id="one-temp" class="card-text">Temp:</p>
+                        <p id="one-wind" class="card-text">Wind:</p>
+                        <p id="one-humidity" class="card-text">Humidity:</p>
+                    </section>
+                </section>
+
+                <section class="card bg-light mx-2">
+                    <section class="card-body">
+                        <h4 id="one-date" class="card-title">Daily[2]</h4>
+                        <img src="#" alt="#">
+                        <p id="one-temp" class="card-text">Temp:</p>
+                        <p id="one-wind" class="card-text">Wind:</p>
+                        <p id="one-humidity" class="card-text">Humidity:</p>
+                    </section>
+                </section>
+
+                <section class="card bg-light mx-2">
+                    <section class="card-body">
+                        <h4 id="one-date" class="card-title">Daily[3]</h4>
+                        <img src="#" alt="#">
+                        <p id="one-temp" class="card-text">Temp:</p>
+                        <p id="one-wind" class="card-text">Wind:</p>
+                        <p id="one-humidity" class="card-text">Humidity:</p>
+                    </section>
+                </section>
+
+                <section class="card bg-light mx-2">
+                    <section class="card-body">
+                        <h4 id="one-date" class="card-title">Daily[4]</h4>
+                        <img src="#" alt="#">
+                        <p id="one-temp" class="card-text">Temp:</p>
+                        <p id="one-wind" class="card-text">Wind:</p>
+                        <p id="one-humidity" class="card-text">Humidity:</p>
+                    </section>
+                </section>
 
             </section>
 
-
-
-            <!-- multiply the above card by 5 in javascript as this makes your app scalable -->
+            <!-- generate the above cards in javascript as this makes your app scalable -->
         </section>
 
     </main>
-
     
     <!-- link moment and jquery, practise vanilla js -->
     <!-- use jquery for moment if required -->
