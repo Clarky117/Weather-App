@@ -1,6 +1,6 @@
 # Weather-App
 
-In week 6 of the UWA Coding Bootcamp we have been tasked with creating a Weather App using the Open Weather Maps server-side API.<br><br>
+A simple Weather App using the Open Weather Maps server-side API.<br><br>
 
 ## Key Points
 
