@@ -21,13 +21,6 @@ When the user searches a city it is stored as a series of secondary buttons unde
 
 ![weather-app](/assets/images/weather-app.png)<br>
 
-
-## Things i want to work on
-
-The last 2 weeks have been somewhat of a huge learning curve for myself. Time management and destressing away from the vigors of this bootcamp are a must. I've been applying myself perhaps too hard in some areas which have led to a bit of burnout on my behalf, however now that i experienced the first assignment where i am not overly proud of my results it's time to get back on the horse and be better prepared for the upcoming weeks.
-
-Enough about the personal aspects, on the professional side i don't want to shy away from javascript with the hopes at some point it does become a bit easier. Talking to my rubber ducky on this one didn't help in the ways i hoped for. I need to review my use of for loops and implementing data through them. I feel like i am good at collaborating or working with a mentor/tutor to achieve the desired results but left to my own devices i struggle to get my head around certain aspects, especially because my rubber ducky does not answer me back!<br><br>
-
 ## Links to Repository and Deployed Site
 
 - Repository - https://github.com/Clarky117/Weather-App
